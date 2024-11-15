@@ -33,7 +33,7 @@ Localstack allows you to emulate AWS services locally. Follow these steps to set
 1. **Install Localstack**
 
    ```bash
-   pip install localstack
+   brew install localstack
    ```
 
 2. **Start Localstack**
