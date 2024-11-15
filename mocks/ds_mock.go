@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
@@ -47,6 +48,7 @@ func predictHandler(w http.ResponseWriter, r *http.Request) {
 
 // generateMockGenres creates a mock list of genres based on asset information
 func generateMockGenres(asset AssetInfo) []string {
+	fmt.Printf("Processing asset: ID=%s, Title=%s\n", asset.ID, asset.Title)
 	// List of possible genres
 	genresList := []string{"Comedy", "Drama", "Action", "Thriller", "Sci-Fi", "Adventure", "Documentary", "History", "Fantasy", "Horror"}
 
