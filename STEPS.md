@@ -24,7 +24,6 @@ Ensure you have the following installed:
 - **Go**: Version 1.18 or later.
 - **AWS CLI**: Configured for Localstack.
 - **Localstack**: To emulate AWS services locally.
-- **Docker**: (Optional) For containerizing services.
 - **Git**: For version control.
 
 ## 2. Setup Localstack
@@ -37,19 +36,7 @@ Localstack allows you to emulate AWS services locally. Follow these steps to set
    pip install localstack
    ```
 
-   **Alternatively, using Docker:**
-
-   ```bash
-   docker pull localstack/localstack
-   ```
-
 2. **Start Localstack**
-
-   **Using Docker:**
-
-   ```bash
-   docker run -d -p 4566:4566 -p 4571:4571 --name localstack localstack/localstack
-   ```
 
    **Using Localstack CLI:**
 
